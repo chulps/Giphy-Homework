@@ -1,6 +1,6 @@
 $("button").on("click", function() {
       var food = $(this).attr("data-food");
-      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + food + "&api_key=dc6zaTOxFJmzC&limit=20";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + food + "&random&api_key=dc6zaTOxFJmzC&limit=20";
       $.ajax({
           url: queryURL,
           method: "GET"
